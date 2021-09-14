@@ -40,7 +40,6 @@ li {
 }
 .slideshow::after {
   content: '';
-  background: linear-gradient(-70deg, rgba(0,0,0,0.4), rgba(0,0,0,0.5));
 }
 .img-bg-slide {
   width: 100%;
@@ -52,19 +51,19 @@ li {
   background-size: cover;
   background-position: center center;
   background-repeat: none;
-  opacity: 0;
   z-index: 0;
+  opacity: 0;
   animation: backgroundSlideshow 30s linear infinite 0s;
 }
 .slideshow li:nth-child(1) .img-bg-slide {
-   background-image: url('./images/hero-image-1.jpg');
+   background-image: linear-gradient(-70deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./images/hero-image-1.jpg');
 }
 .slideshow li:nth-child(2) .img-bg-slide { 
-    background-image: url('./images/hero-image-2.jpg');
+    background-image: linear-gradient(-70deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./images/hero-image-2.jpg');
     animation-delay: 7.5s; 
 }
 .slideshow li:nth-child(3) .img-bg-slide { 
-    background-image: url('./images/hero-image-3.jpg');
+    background-image: linear-gradient(-70deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./images/hero-image-3.jpg');
     animation-delay: 15s; 
 }
 @keyframes backgroundSlideshow {
@@ -72,7 +71,7 @@ li {
   12.5% { opacity: 1;}
   25% { opacity: 1;}
   37.5% { opacity: 0;}
-  100% { opacity: 0;} 
+  50% { opacity: 1; }
 }
 
 .wrapper {
