@@ -53,26 +53,26 @@ li {
   background-repeat: none;
   z-index: 0;
   opacity: 0;
-  animation: backgroundSlideshow 20s ease-in-out infinite;
+  animation: backgroundSlideshow 30s ease-in-out;
   animation-fill-mode: both;
 }
 .slideshow li:nth-child(1) .img-bg-slide {
-   background-image: linear-gradient(-70deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./images/hero-image-1.jpg');
+   background-image: linear-gradient(-70deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('./images/hero-image-1.jpg'); 
+   animation-delay: 0s; 
 }
 .slideshow li:nth-child(2) .img-bg-slide { 
-    background-image: linear-gradient(-70deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./images/hero-image-2.jpg');
-    animation-delay: 5s; 
+    background-image: linear-gradient(-70deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('./images/hero-image-2.jpg');
+    animation-delay: 15s; 
 }
 .slideshow li:nth-child(3) .img-bg-slide { 
-    background-image: linear-gradient(-70deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./images/hero-image-3.jpg');
-    animation-delay: 10s; 
+    background-image: linear-gradient(-70deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('./images/hero-image-3.jpg');
+    animation-delay: 25s; 
 }
 @keyframes backgroundSlideshow {
   0% { opacity: 0;}
   25% { opacity: 1;}
   50% { opacity: 1;}
-  90% { opacity: 0;}
-  100% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .wrapper {
